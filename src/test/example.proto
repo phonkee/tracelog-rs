@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package example;
+
+import "google/protobuf/empty.proto";
+
+// ExampleService
+service ExampleService {
+  rpc Health (google.protobuf.Empty) returns (ExampleResponse);
+}
+
+message ExampleResponse {
+}
